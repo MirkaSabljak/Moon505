@@ -5,13 +5,23 @@
     <title>title</title>
 </head>
 <body>
-
-    <p style="color:blue">hola</p>
-    <p style="color:rgb(255, 116, 2)">hola</p>
+     <p id="titulo" style="color:blue">hola</p>
+     <p style="color:rgb(255, 116, 2)">hola</p>
      <p style="
      color:#ff00b3;
      background-color:hsl(0, 81%, 32%);
      ">hola</p>
 </body>
-<script></script>
+<script>
+    let titulo = document.getElementByid("titulo")
+titulo.innerHTML = "hola soy Mirka"
+titulo.style.color = "blue"
+titulo.style.backgroundColor = "#534"
+
+let crearElemento = document.createElement("h1")
+crearElemento.innerHTML = "nuevo elemento"
+crearElemento.style.color = "lightgreen"
+crearElemento.style.backgroundColor = "darkgreen"
+document.body.appendChild(crearElemento)
+</script>
 </html>
